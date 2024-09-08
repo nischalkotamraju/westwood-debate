@@ -23,28 +23,8 @@ export default function Home() {
       startDelay: 2000,
     };
 
-    const quoteOptions = {
-      strings: ['"Those 4 years in debate were the educational foundation of everything I did. And I don\'t mean that in some simple form...I\'m saying the finest education I got from any of the institutions I attended, the foundation of my mind that I got during those 4 years of competitive policy debate; that is, 90% of the intellectual capacity that I operate with today--Fordham for college, Fordham for the Ph.D., Harvard for law school--all of that is the other 10%."'],
-      typeSpeed: 5,
-      backSpeed: 5,
-      loop: false,
-      showCursor: false,
-      startDelay: 4000,
-    };
-
-    const authorOptions = {
-      strings: ['John Sexton, President of NYU'],
-      typeSpeed: 30,
-      backSpeed: 30,
-      loop: false,
-      showCursor: false,
-      startDelay: 10000,
-    };
-
-    const typedTitle = new Typed('.typed-title', titleOptions);
-    const typedSubtitle = new Typed('.typed-subtitle', subtitleOptions);
-    const typedQuote = new Typed('.typed-quote', quoteOptions);
-    const typedAuthor = new Typed('.typed-author', authorOptions);
+    const typedTitle = new Typed('#typed-title', titleOptions);
+    const typedSubtitle = new Typed('#typed-subtitle', subtitleOptions);
 
     const handleScroll = () => {
       const scrollPosition = window.scrollY + window.innerHeight;
@@ -58,8 +38,6 @@ export default function Home() {
     return () => {
       typedTitle.destroy();
       typedSubtitle.destroy();
-      typedQuote.destroy();
-      typedAuthor.destroy();
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
@@ -187,12 +165,8 @@ export default function Home() {
       <main className="container mx-auto px-4 py-8">
         <div className="text-center mb-64 min-h-[70vh] flex flex-col justify-center items-center">
           <img src={require("../assets/wwhs-debate-logo.jpeg")} alt="WWHS Debate Logo" className="mb-4 w-64 h-64 object-contain rounded-full" />
-          <h1 className="text-4xl md:text-6xl font-bold school-color mb-4 typed-title"></h1>
-          <p className="text-xl text-gray-300 typed-subtitle"></p>
-          <div className="mt-8 p-8 bg-neutral-800 rounded-lg shadow-lg">
-            <p className="text-gray-300 italic mb-4 typed-quote"></p>
-            <p className="school-color font-semibold typed-author italic"></p>
-          </div>
+          <h1 className="text-4xl md:text-6xl font-bold school-color mb-4" id="typed-title">Westwood Speech and Debate</h1>
+          <p className="text-xl text-gray-300" id="typed-subtitle">Practice on Wednesdays, Thursdays, and Friday Flex!</p>
         </div>
 
         {sections.map((section, index) => (
