@@ -10,14 +10,11 @@ export default function Footer () {
             © 2024 Westwood High School Speech and Debate. All rights reserved.
           </p>
           <div className="flex space-x-4">
-            <a href="" className="text-gray-400 hover:text-white">
+            <a href="https://github.com/nischalkotamraju/westwood-debate" className="text-gray-400 hover:text-white">
               <FaGithub className="text-lg" />
             </a>
-            <a href="" className="text-gray-400 hover:text-white">
+            <a href="https://www.instagram.com/westwooddebate/?hl=en" className="text-gray-400 hover:text-white">
               <FaInstagram className="text-lg" />
-            </a>
-            <a href="" className="text-gray-400 hover:text-white">
-              <MdEmail className="text-lg" />
             </a>
           </div>
         </div>
