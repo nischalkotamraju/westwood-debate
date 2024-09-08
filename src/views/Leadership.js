@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { FaCrown, FaMicrophone, FaGavel, FaHandshake, FaBullhorn, FaFileAlt, FaBook, FaMoneyBillWave, FaHistory, FaUserGraduate, FaUsers } from 'react-icons/fa';
+import { FaCrown, FaGavel, FaHandshake, FaFileAlt, FaBook, FaMoneyBillWave, FaHistory, FaUserGraduate, FaUsers } from 'react-icons/fa';
 
 export default function Leadership () {
   const officers = [

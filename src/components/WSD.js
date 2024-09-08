@@ -75,6 +75,7 @@ export default function WSD() {
                     <div className="aspect-w-16 aspect-h-9 mb-4">
                         <iframe
                             src="https://www.youtube.com/embed/t5ChDcqZEfs?autoplay=1&mute=1"
+                            title='WSD Video'
                             frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowFullScreen

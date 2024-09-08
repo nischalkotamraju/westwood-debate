@@ -71,6 +71,7 @@ export default function LD() {
                     <div className="aspect-w-16 aspect-h-9 mb-4">
                         <iframe
                             src="https://www.youtube.com/embed/Dw6Nvv8UMbU?autoplay=1&mute=1"
+                            title='LD Video'
                             frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowFullScreen

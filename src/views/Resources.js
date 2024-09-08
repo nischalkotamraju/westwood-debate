@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { FaUser, FaCampground, FaBook, FaTrophy, FaClipboard, FaChalkboardTeacher, FaTimes, FaChevronDown } from 'react-icons/fa';
+import { FaUser, FaCampground, FaBook, FaTimes, FaChevronDown } from 'react-icons/fa';
 import tournaments from '../assets/tournaments.json';
 import camps from '../assets/camps.json';
 
